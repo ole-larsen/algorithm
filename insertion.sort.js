@@ -7,7 +7,9 @@ export default function insertionSort(arr) {
       arr[j + 1] = arr[j];
       j = j - 1;
     }
+  
     arr[j + 1] = tmp;
   }
+  
   return arr;
 }
