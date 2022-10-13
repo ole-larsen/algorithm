@@ -3,7 +3,7 @@ export default function insertionSort(arr) {
     let tmp = arr[i], 
         j = i - 1;
 
-    while (j >= 0 && arr[j] > tmp) {
+    while (arr[j] > tmp) {
       arr[j + 1] = arr[j];
       j--;
     }
