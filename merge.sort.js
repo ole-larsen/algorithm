@@ -1,4 +1,4 @@
-function mergeHelper(left, right) {
+function merge(left, right) {
   const sorted = [];
 
   while (left.length && right.length) {
@@ -17,5 +17,5 @@ export default function mergeSort(arr) {
         left = mergeSort(arr.slice(0, middleIndex)),
         right = mergeSort(arr.slice(middleIndex));
 
-  return mergeHelper(left, right)
+  return merge(left, right)
 }
